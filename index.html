@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">  
+  <title>Frontend Mentor | Social links profile</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      max-width: 100%;
+      background-color: var(--Grey-900);
+      display: grid;
+      place-content: center;
+      line-height: 1.5;
+    }
+
+
+    :root {
+      --Green: hsl(75, 94%, 57%);
+      --White: hsl(0, 0%, 100%);
+      --Grey-700: hsl(0, 0%, 20%);
+      --Grey-800: hsl(0, 0%, 12%);
+      --Grey-900: hsl(0, 0%, 8%);
+    }
+
+    .media-card {
+      min-width: clamp(12rem, 22rem, 25rem);
+      min-height: fit-content;
+      padding: 1rem;
+      background-color: var(--Grey-800);
+      border-radius: .6rem;
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      align-items: center;
+    }
+
+     .media-card > * {
+      margin-block: .5rem;
+      flex: 1;
+     }
+
+    .media-card > .social-contact a {
+      display: block;
+      margin-top: .8rem;
+      text-decoration: none;
+      text-align: center;
+      color: var(--White);
+      padding: .8rem 6rem;
+      background-color: var(--Grey-700);
+      border-radius: .5rem;
+    }
+
+    .bio > h2 {
+      color: var(--White);
+    }
+    .bio > p {
+      font-size: 14px;
+      text-align: center;
+      color: var(--Green);
+    }
+
+    .intro {
+      color: var(--White);
+    }
+
+     
+    img {
+      display: block;
+      max-width: 50%;
+      clip-path: circle(50%);
+      margin-inline: auto;
+    }
+
+    @media screen and (max-width: 370px) {
+      .media-card {
+        padding: .5rem;
+        max-width: 100%;
+      }
+        .media-card > .social-contact a {
+          padding: .5rem 4rem;
+        }
+
+    }
+  
+  </style>
+</head>
+<body>
+  <div class="media-card">
+      <div class="avatar">
+        <img src="images/avatar-jessica.jpeg" alt="avatar">
+      </div>
+
+      <div class="bio">
+          <h2>Jesscica Randall</h2>
+          <p>London, united kingdoom</p>
+      </div>
+
+      <div class="intro">
+        <p>"Frontend developer and avid reader"</p>
+      </div>
+
+      <div class="social-contact">
+        <a href="#">Github</a>
+        <a href="#">Frontend Mentor</a>
+        <a href="#">Linkedin</a>
+        <a href="#">Twitter</a>
+        <a href="#">Instagram</a>
+      </div>
+
+    
+
+  
+
+    
+  </div>
+
+</body>
+</html>
